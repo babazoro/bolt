@@ -1,26 +1,20 @@
+.clearfix::before,
+.clearfix::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
 .wrapper {
-	min-width: 1100px
+	min-width: 1100px;
 }
 
-h1 {
-	font-size: 90px;
-	font-weight: 700;
-	color: #74cfae;
-	margin-bottom: 20px;
-	font-family: Raleway;
-}
-
-h2 {
-	font-size: 30px;
-	color: #c0c0c0;
-	font-family: Raleway;
-}
-
-header {
-	padding: 15px;
-	width: 1100px;
-	margin: 0 auto;
+.header {
+	position: fixed;
 	box-sizing: border-box;
+	padding: 15px;
+	width: 100%;
+	background-color: #fff;
 }
 
 .box {
@@ -40,174 +34,188 @@ header {
 	background-color: #74cfae;
 	color: #fff;
 	border: 0;
+	transition: 0.3s;
 }
 
 .contact-btn:hover {
 	color: #333;
-	transition: 0.3s;
 }
 
-.bolt-theme {
-	padding: 250px 0 250px;
+.bolt {
+	padding: 250px 0;
 	text-align: center;
 	background-color: #f2f2f2;
 }
 
-.what-we-can-do {
+.bolt-title {
+	font-size: 90px;
+	font-weight: 700;
+	color: #74cfae;
+	margin-bottom: 20px;
+	font-family: Raleway;
+}
+
+.bolt-sabtitle {
+	font-size: 30px;
+	color: #c0c0c0;
+	font-family: Raleway;
+}
+
+.about {
 	background-color: #74cfae;
 	padding-top: 50px;
 	text-align: center;
 }
 
-.what-title {
+.about-title {
 	font-size: 24px;
 	text-align: center;
 	color: #fff;
 	font-family: Raleway;
 }
 
-.iphone-img {
+.about-img {
 	display: inline-block;
 }
 
-.what-title-text {
+.about-text-box {
 	display: inline-block;
 	float: right;
+	width: 70%;
 }
 
-.text {
+.about-text {
 	font-size: 20px;
 	margin-top: 35px;
 	color: #fff;
 }
 
-.our-title {
-	font-size: 24px;
-	text-align: center;
-	color: #333;
-	font-family: Raleway;
+.text {
+	display: inline-block;
+	word-wrap: break-word;
 }
 
-.our-latest-work {
+.work {
 	background-color: #f2f2f2;
 	padding-top: 60px;
 	text-align: center;
 }
 
-.img-box-top {
+.work-title {
+	font-size: 24px;
+	text-align: center;
+	color: #333;
+	font-family: Raleway;
+}
+
+.work-img-box {
 	margin-top: 40px;
-}
-
-.img-box-under {
-	margin-top: 80px;
 	margin-bottom: 90px;
+	font-size: 0;
 }
 
-.img-box > img {
-	margin-left: 100px;
+.img-box {
+	display: inline-block;
+	margin-right: 100px;
+	margin-bottom: 80px;
+}
+
+.work-img-box > .img-box:nth-child(3n) {
+	margin-right: 0;
+}
+
+.work-img {
 	opacity: 0.7;
-}
-
-.img-box > img:first-child {
-	margin-left: 0;
-}
-
-.img-box > img:hover {
-	opacity: 1;
 	transition: 0.3s;
 }
 
-.lorem-text {
-	display: inline-block;
-	margin-bottom: 70px;
-	margin-right: 90px;
+.work-img:hover {
+	opacity: 1;
 }
 
-.email-btn {
+.work-text {
+	margin-bottom: 70px;
+	margin-right: 90px;
+	width: 48%;
+}
+
+.work-btn {
 	font-size: 12px;
 	padding: 14px 20px;
 	background-color: #74cfae;
 	color: #fff;
 	border: 0;
-}
-
-.email-btn:hover {
-	color: #333;
 	transition: 0.3s;
 }
 
-.our-skills {
-	min-width: 1100px;
-	background: #4e4e4e;
-	padding-bottom: 100px;
+.work-btn:hover {
+	color: #333;
 }
 
-.our-skils-title {
-	padding: 70px;
+.skills {
+	background: #4e4e4e;
+	padding-bottom: 100px;
+	padding-top: 70px;
+}
+
+.skils-title {
 	font-size: 24px;
 	text-align: center;
 	color: #fff;
 	font-family: Raleway;
 }
 
-.circle-box {
+.skills-circle-box {
 	text-align: center;
 }
 
-.circle {
+.skills-circle {
 	display: inline-block;
 	margin-right: 180px;
 	text-align: center;
 }
 
-.circle:last-child {
+.skills-circle:last-child {
 	margin-right: 0;
 }
 
-.circle > p {
+.skills-circle > p {
 	font-size: 16px;
 	color: #fff;
 	padding: 10px;
 }
 
-nav {
+.nav {
 	background-color: #f2f2f2;
-	min-width: 1100px;
 }
 
-ul {
+.ul {
 	text-align: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
 
-li {
+.li {
 	box-sizing: border-box;
 	padding: 15px;
 	width: 185px;
 	color: #74cfae;
 	cursor: pointer;
-}
-
-li:hover {
-	background: #fff;
 	transition: 0.3s;
 }
 
-footer {
+.li:hover {
+	background: #fff;
+}
+
+.footer {
 	box-sizing: border-box;
 	background-color: #74cfae;
+	padding: 20px;
 }
 
 .footer-text {
-	margin: 20px;
 	float: right;
 	color: #fff;
 }
 
-.clearfix::before,
-.clearfix::after {
-	display: block;
-	content: '';
-	clear: both;
-}
