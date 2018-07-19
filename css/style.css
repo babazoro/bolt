@@ -5,11 +5,14 @@
 	clear: both;
 }
 
+.link {
+	display: inline-block;
+	text-decoration: none;
+}
+
 .wrapper {
 	min-width: 1100px;
 }
-
-
 
 .header {
 	position: fixed;
@@ -20,7 +23,6 @@
 	background-color: #fff;
 	z-index: 1;
 }
-
 
 .box {
 	width: 1100px;
@@ -46,17 +48,12 @@
 }
 
 .main {
-	padding-top: 250px;
+	padding-top: 94px;
 	background-color: #f2f2f2;
 }
 
-.main::before {
-	content: "";
-	display: inline-block;
-	height: 94px;
-}
-
 .bolt {
+	padding-top: 250px;
 	padding-bottom: 250px;
 	text-align: center;
 	background-color: #f2f2f2;
@@ -131,7 +128,6 @@
 }
 
 .img-box {
-	display: inline-block;
 	margin-right: 100px;
 	margin-bottom: 80px;
 }
@@ -140,15 +136,7 @@
 	margin-right: 0;
 }
 
-.work-img-box > .img-box:nth-child(4) {
-	margin-bottom: 0;
-}
-
-.work-img-box > .img-box:nth-child(5) {
-	margin-bottom: 0;
-}
-
-.work-img-box > .img-box:nth-child(6) {
+.work-img-box > .img-box:nth-child(n+4) {
 	margin-bottom: 0;
 }
 
@@ -172,6 +160,7 @@
 	background-color: #74cfae;
 	color: #fff;
 	transition: 0.3s;
+	vertical-align: top;
 }
 
 .work-btn:hover {
@@ -222,16 +211,19 @@
 	padding-bottom: 200px;
 }
 
-.nav-list > li {
+.li {
+	display: inline-block;
+}
+
+.li > a {
 	box-sizing: border-box;
 	padding: 15px;
 	width: 185px;
 	color: #74cfae;
-	cursor: pointer;
 	transition: 0.3s;
 }
 
-.nav-list > li:hover {
+.li > a:hover {
 	background: #fff;
 }
 
